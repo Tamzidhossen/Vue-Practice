@@ -4,6 +4,9 @@
   import ClassBinding from './components/ClassBinding.vue';
   import StyleBinding from './components/StyleBinding.vue';
   import ReactiveArr from './ReactiveArr.vue';
+  import ImageCarousel from './ImageCarousel.vue';
+  import EventModifier from './EventModifier.vue';
+
   const message = 'Welcome. Get ready to master Vue. js 3!'
   const date = '<strong>30th June, 2023</strong>'
 
@@ -57,5 +60,11 @@
   <!-- <display-team/> -->
 
   <!-- ReactiveArr -->
-  <reactive-arr/>
+  <!-- <reactive-arr/> -->
+
+  <!-- ImageCarousel -->
+  <!-- <image-carousel/> -->
+
+  <!-- EventModifier -->
+  <event-modifier/>
 </template>

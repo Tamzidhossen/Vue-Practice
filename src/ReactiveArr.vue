@@ -1,12 +1,38 @@
 <script setup>
     import { ref, reactive } from 'vue'
-    const accordions = reactive([
+    //Exmple 1
+    /*const accordions = reactive([
         false, false, false
     ])
 
     function toggle(index){
         accordions[index] = !accordions[index]
-    }
+    }*/
+    
+    //Exmple 2
+    const activeIndex = ref(0)
+    const accordions = reactive([
+        {
+            heading: "What is term",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?",
+            isOpen: false
+        },
+        {
+            heading: "When to use Accordion Components?",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?",
+            isOpen: false
+        },
+        {
+            heading: "How can  it be defined?",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?",
+            isOpen: false
+        },
+        {
+            heading: "Chamber reached  do he nothing  be?",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?",
+            isOpen: false
+        }
+    ])
 </script>
 <template>
     <section class="container mx-auto flex items-center flex-col">
@@ -21,18 +47,18 @@
                     </p>
                     <div class="h-1 w-full mx-auto border-b my-5"></div>
 
-                    <div class="transition hover:bg-indigo-50">
-                        <div @click="toggle(0)" class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+                    <div class="transition hover:bg-indigo-50" v-for="(accordion, index) in accordions" :key="index">
+                        <div @click="accordion.isOpen = !accordion.isOpen" class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
                             <i class="fas fa-plus">click</i>
-                            <h3>Hello</h3>
+                            <h3>{{ accordion.heading }}</h3>
                         </div>
-                        <div class="px-5 pt-0 text-left pb-5" v-show="accordions[0]">
+                        <div class="px-5 pt-0 text-left pb-5" v-show="accordion.isOpen">
                             <p class="leading-6 font-light pl-9">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?
+                                {{ accordion.content }}
                             </p>
                         </div>
                     </div>
-                    <div class="transition hover:bg-indigo-50">
+                    <!-- <div class="transition hover:bg-indigo-50">
                         <div @click="toggle(1)" class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
                             <i class="fas fa-plus">click</i>
                             <h3>Hello2</h3>
@@ -53,7 +79,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis dolor ipsam illo?
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
