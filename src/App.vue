@@ -6,6 +6,7 @@
   import ReactiveArr from './ReactiveArr.vue';
   import ImageCarousel from './ImageCarousel.vue';
   import EventModifier from './EventModifier.vue';
+  import AdvEvntModifre from './components/AdvEvntModifre.vue';
 
   const message = 'Welcome. Get ready to master Vue. js 3!'
   const date = '<strong>30th June, 2023</strong>'
@@ -66,5 +67,8 @@
   <!-- <image-carousel/> -->
 
   <!-- EventModifier -->
-  <event-modifier/>
+  <!-- <event-modifier/> -->
+
+  <!-- Advanced EventModifier -->
+  <adv-evnt-modifre/>
 </template>
