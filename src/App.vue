@@ -7,6 +7,7 @@
   import ImageCarousel from './ImageCarousel.vue';
   import EventModifier from './EventModifier.vue';
   import AdvEvntModifre from './components/AdvEvntModifre.vue';
+  import LifeCycleHook from './components/LifecycleHooks/LifeCycleHook.vue';
 
   const message = 'Welcome. Get ready to master Vue. js 3!'
   const date = '<strong>30th June, 2023</strong>'
@@ -70,5 +71,8 @@
   <!-- <event-modifier/> -->
 
   <!-- Advanced EventModifier -->
-  <adv-evnt-modifre/>
+  <!-- <adv-evnt-modifre/> -->
+
+  <!-- LifeCycleHook -->
+  <life-cycle-hook/>
 </template>
