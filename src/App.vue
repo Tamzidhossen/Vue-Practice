@@ -15,6 +15,7 @@
   // const location = "C";
 
   import { ref } from 'vue';
+import UseFlickity from './components/LifecycleHooks/UseFlickity.vue';
   const location = ref('Dhaka')
 
   function changeLocation(newLocation){
@@ -74,5 +75,8 @@
   <!-- <adv-evnt-modifre/> -->
 
   <!-- LifeCycleHook -->
-  <life-cycle-hook/>
+  <!-- <life-cycle-hook/> -->
+
+  <!-- Use Flickity -->
+  <UseFlickity/>
 </template>
