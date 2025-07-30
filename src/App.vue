@@ -8,6 +8,9 @@
   import EventModifier from './EventModifier.vue';
   import AdvEvntModifre from './components/AdvEvntModifre.vue';
   import LifeCycleHook from './components/LifecycleHooks/LifeCycleHook.vue';
+  import Chartjs from './components/LifecycleHooks/Chartjs.vue';
+  import UseFlickity from './components/LifecycleHooks/UseFlickity.vue';
+  import TwoDbinding from './components/LifecycleHooks/TwoDbinding.vue';
 
   const message = 'Welcome. Get ready to master Vue. js 3!'
   const date = '<strong>30th June, 2023</strong>'
@@ -15,7 +18,6 @@
   // const location = "C";
 
   import { ref } from 'vue';
-import UseFlickity from './components/LifecycleHooks/UseFlickity.vue';
   const location = ref('Dhaka')
 
   function changeLocation(newLocation){
@@ -78,5 +80,11 @@ import UseFlickity from './components/LifecycleHooks/UseFlickity.vue';
   <!-- <life-cycle-hook/> -->
 
   <!-- Use Flickity -->
-  <UseFlickity/>
+  <!-- <UseFlickity/> -->
+
+  <!-- Chartjs -->
+  <!-- <Chartjs/> -->
+
+  <!-- TwoWayDataBinging v-model -->
+  <TwoDbinding/>
 </template>
