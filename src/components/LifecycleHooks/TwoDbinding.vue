@@ -1,6 +1,28 @@
-<!-- Two Way Data Binding Using Checkbox -->
+<!-- Two Way Data Binding Using Multiple checkbox Array -->
 
 <script setup>
+import { ref, reactive } from 'vue';
+const favColors = ref([])
+</script>
+<template>
+    <section class="mx-auto container text-center mt-4">
+        <h1 class="text-2xl mb-10">Vue Form</h1>
+        <p class="mb-10">
+            {{ favColors }}
+        </p>
+        Display Favorite Colors <br/>
+        <label for="red">Red</label>
+        <input type="checkbox" class="ml-2 mr-2" v-model="favColors" value="red">
+        <label for="green">Green</label>
+        <input type="checkbox" class="ml-2 mr-2" v-model="favColors" value="green">
+        <label for="blue">Blue</label>
+        <input type="checkbox" class="ml-2 mr-2" v-model="favColors" value="blue">
+    </section>
+</template>
+
+<!-- Two Way Data Binding Using RadioBox -->
+
+<!-- <script setup>
 import { ref, reactive } from 'vue';
 const displayImage = ref(true)
 </script>
@@ -18,7 +40,7 @@ const displayImage = ref(true)
         </p>
         <img v-show="displayImage" class="mt-10 mx-auto w-[500px] h-[500px]" :src="`https://images.unsplash.com/photo-1753785253859-08113daa0342?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2NXx8fGVufDB8fHx8fA%3D%3D`" alt="">
     </section>
-</template>
+</template> -->
 
 <!-- Two Way Data Binding Using Checkbox -->
 
