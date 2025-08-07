@@ -11,6 +11,7 @@
   import Chartjs from './components/LifecycleHooks/Chartjs.vue';
   import UseFlickity from './components/LifecycleHooks/UseFlickity.vue';
   import TwoDbinding from './components/LifecycleHooks/TwoDbinding.vue';
+  import InvoiceGen from './components/Invoice-Gen/Invoice-gen.vue';
 
   const message = 'Welcome. Get ready to master Vue. js 3!'
   const date = '<strong>30th June, 2023</strong>'
@@ -18,6 +19,7 @@
   // const location = "C";
 
   import { ref } from 'vue';
+  import TwoDbinding2 from './components/LifecycleHooks/TwoDbinding2.vue';
   const location = ref('Dhaka')
 
   function changeLocation(newLocation){
@@ -86,5 +88,11 @@
   <!-- <Chartjs/> -->
 
   <!-- TwoWayDataBinging v-model -->
-  <TwoDbinding/>
+  <!-- <TwoDbinding/> -->
+
+  <!-- TwoWayDataBinging2 v-model -->
+  <!-- <TwoDbinding2/> -->
+
+  <!-- Invoice-Generator -->
+  <invoice-gen/>
 </template>
